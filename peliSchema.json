@@ -1,0 +1,48 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema#",
+    "$id": "http://example.com/schemas/painting.schema.json",
+    "type": "object",
+    "title": "Film",
+    "description": "Film information",
+    "required": ["name", "artist", "dimension", "description", "tags"],
+    "properties": {
+    "titulo": {
+    "type": "string",
+    "description": "Painting name"
+    },
+    "año": {
+    "type": "integer",
+    "minimum": 1800
+    },
+    "directores": {
+    "type": "array",
+    "items":  "$ref": "#/$defs/ person"
+    },
+    "generos": { 
+    "type": "array",
+    "items": { "type": "string",
+    "enum":["Accion", "Aventura", "Fantasía", "Ciencia Ficción"],
+    "minItems": 1,
+    "unique": true
+        }
+    },
+    "minutos":{
+        "type": "integer",
+        "minimum":1
+    },
+    "puntuacion":{
+        
+    },
+    "actores":{
+        "type": "array",
+        "items":{"$ref": "#/defs/person"}
+    },
+    "presupuesto":{"type": "integer"},
+    "descripcion": {"type": "integer"},
+
+    "$defs": {
+    "tag": {
+    "type": "string",
+    "enum": ["oil", "watercolor", "digital", "famous"]
+    }
+}}}

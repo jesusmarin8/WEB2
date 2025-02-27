@@ -1,0 +1,23 @@
+{
+    "titulo": "Avatar 2",
+    "año": 2022,
+    "directores": ["James Cameron"],
+    "generos": ["Accion", "Aventura", "Fantasía", "Ciencia Ficción"],
+    "minutos": 192,
+    "puntuacion": 7.5,
+    "actores": ["Sam Worthington", "Zoe Saldaña"],
+    "presupuesto": 356000000,
+    "descripcion": "Jake Sully .....",
+    "idiomas": "ingles",
+    "beneficios": 232000000,
+    "premios": [{"año":2023,
+    "titulo": "Oscar",
+    "resultado":"Nominado",
+    "categoria": "Best Sound"}, 
+    {"año":2023,
+    "titulo": "Oscar",
+    "ganado":false,
+    "categoria": "Best Visuals"}]
+
+
+}
